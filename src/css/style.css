@@ -1,0 +1,102 @@
+html {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    background-image: url(../image/pattern-background-desktop.svg);
+    background-size: cover;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: var(--card-color);
+    width: 350px;
+    height: 530px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card .info .title {
+    font-weight: 900;
+    font-size: 18px;
+    margin: 20px 0 15px
+}
+
+.card .info .description {
+    color: var(--span-color);
+    font-weight: 500;
+}
+
+.card .plan {
+    background-color: var(--plan-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.card .plan .annual {
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.card .plan .year {
+    font-weight: 500;
+    color: var(--span-color);
+}
+
+.card .plan .change {
+    font-size: 14px;
+    margin-left: 50px;
+}
+
+.card .plan .icon {
+    margin-right: 15px;
+    width: 40px;
+    height: 40px;
+}
+
+.card .btn {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card .btn .pay {
+    background-color: var(--btn-color);
+    color: var(--card-color);
+    font-weight: 700;
+    margin: 0 35px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    filter: drop-shadow(0px 5px 5px hsl(245, 75%, 52%));
+    transition: 0.4s ease-in-out;
+}
+
+.card .btn .pay:hover {
+    transform: scale(1.1);
+}
+
+.card .btn .cancel {
+    margin: 25px 35px;
+    background-color: var(--card-color);
+    font-weight: 700;
+    color: var(--span-color);
+    transition: 0.2s ease-in-out; 
+}
+
+.card .btn .cancel:hover {
+    transform: scale(1.1);
+}
